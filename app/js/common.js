@@ -73,3 +73,12 @@ $(window).on('load resize', function() {
 
 // select
 $('.js-example-basic-single').select2();
+
+// mobile menu
+$('.btn-burger').on('click', function () {
+   $('.mobile-menu').fadeIn();
+});
+
+$('.btn-close').on('click', function () {
+    $('.mobile-menu').fadeOut();
+});

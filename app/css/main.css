@@ -1308,6 +1308,102 @@ header {
     height: 2px;
     background: #fff; }
 
+.mobile-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  background: #0a1d37;
+  padding: 0 16px 60px;
+  display: none; }
+  .mobile-menu .btn-apply {
+    margin: 0 -15px 0 0;
+    width: 70px;
+    height: 69px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .mobile-menu-top {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 13px; }
+  .mobile-menu .box-decor {
+    margin: 0 auto; }
+  .mobile-menu .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none;
+    margin: 30px auto; }
+    .mobile-menu .menu li {
+      margin: 0 auto 30px; }
+      .mobile-menu .menu li a {
+        padding: 0 0 10px; }
+        .mobile-menu .menu li a:before {
+          top: auto;
+          bottom: 0; }
+
+.btn-close {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  cursor: pointer; }
+  .btn-close:after, .btn-close:before {
+    content: '';
+    position: absolute;
+    left: 9px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    border-radius: 5px; }
+  .btn-close:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .btn-close:after {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
+.list-language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  font-size: 13px; }
+  .list-language li {
+    margin: 0 25px 0 0; }
+    .list-language li:last-child {
+      margin: 0; }
+    .list-language li a {
+      color: rgba(255, 255, 255, 0.3); }
+    .list-language li .active {
+      color: #fff; }
+
 @font-face {
   font-family: "CenturyGothic";
   font-weight: 400;

@@ -268,6 +268,18 @@
   .header-wrapper
     margin: 0 20px 0 auto
 
+  .btn-apply
+    width: 70px
+    height: 69px
+    padding: 0
+    align-items: center
+    justify-content: center
+    .btn-icon
+      display: flex
+      margin: 0
+    .btn-text
+      display: none
+
 @media only screen and (max-width: 576px)
   footer
     padding: 40px 0 38px
@@ -328,7 +340,7 @@
     .slick-active
       background: #003ec0
 
-  .slick-dost
+  .slick-dots
     li
       width: 20px
       height: 3px
@@ -362,11 +374,140 @@
   .fleet-item__text
     padding: 0 20px 30px
 
+  .scroll-block
+    overflow-x: visible
+
+  .certificate-box
+    min-width: auto
+    width: 220px
+    height: 291px
+
+  .certificate-box__img
+    max-width: 168px
+
+  .certificates
+    padding: 80px 0 36px
+
+  .certificates-wrapper.slick-initialized .slick-slide
+    display: flex
+
+  .certificates-nav
+    margin: 40px auto 0
+    .slick-dots
+      li
+        background: rgba(#0a1d37, .3)
+      .slick-active
+        background: #003ec0
+
+
+  .btn-download
+    padding: 7px 15px
+
+  .number-max
+    display: none
+
+  .advantages
+    padding: 0 0 85px
+    .slick-arrow
+      top: 210px
+    .slick-prev
+      left: 0
+    .slick-next
+      left: 70px
+
+  .advantages-text
+    width: 100%
+    max-width: none
+
+  .advantages-item__content
+    padding: 0
+    width: 100%
+
+  .advantages-item
+    flex-wrap: wrap
+
+  .advantages-item__icon
+    margin: 0 auto 33px
+
+  .advantages-item__top
+    width: 100%
+    margin: 0 0 68px
+    .number
+      margin: 0 30px 0 0
+
+  .about-images
+    margin: 0 auto 80px
+    &:before
+      width: calc(100% + 30px)
+      left: -15px
+      height: 100px
+    .image
+      height: 200px
+      max-width: 291px
+
+  .about-images-text
+    width: 130px
+    height: 160px
+    padding: 20px
+    bottom: -20px
+    strong
+      line-height: 1
+
+  .timetable
+    padding: 78px 0 48px
+
+  .timetable-line
+    padding: 20px 10px 20px 0
+
+  .timetable-line__box
+    width: calc(100% - 130px)
+    margin: 0 0 15px auto
+
+  .timetable-line__title
+    margin: 0
+    width: 100%
+    padding: 0 0 0 20px
+
+  .timetable-line__date
+    width: 95px
+    height: 100px
+
+  .timer
+    &:before, &:after
+      display: none
+
+  .main-box
+    width: 100%
+    height: 194px
+
+  .home-content
+    margin: 0 0 105px 20px
+    max-width: 240px
+
+  h1
+    font-size: 31.5px
+
+  .home
+    padding: 284px 0 0
+    background: url("../img/bg1-mob.png") no-repeat center top
+      size: 100%
+
+  .logo
+    max-width: 123px
+    margin: 0 auto 0 0
+
+  .header-wrapper
+    display: none
+
+
+
 @media only screen and (max-width: 480px)
   /**/
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 360px)
+  .advantages
+    .slick-arrow
+      top: 220px
 

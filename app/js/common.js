@@ -54,8 +54,18 @@ $(window).on('load resize', function() {
             variableWidth: true,
             appendDots: '.place-wrapper-dots'
         });
+
+        $('.certificates-wrapper:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            arrows: false,
+            variableWidth: true,
+            appendDots: '.certificates-nav'
+        });
     } else {
         $(".place-wrapper.slick-initialized").slick("unslick");
+        $(".certificates-wrapper.slick-initialized").slick("unslick");
     }
 });
 // slick active

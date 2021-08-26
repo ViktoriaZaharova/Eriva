@@ -1636,7 +1636,24 @@ footer {
   .language {
     margin: 0 0 0 20px; }
   .header-wrapper {
-    margin: 0 20px 0 auto; } }
+    margin: 0 20px 0 auto; }
+  .btn-apply {
+    width: 70px;
+    height: 69px;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .btn-apply .btn-icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: 0; }
+    .btn-apply .btn-text {
+      display: none; } }
 
 @media only screen and (max-width: 576px) {
   footer {
@@ -1696,7 +1713,7 @@ footer {
       background: rgba(10, 29, 55, 0.3); }
     .place-wrapper-dots .slick-active {
       background: #003ec0; }
-  .slick-dost li {
+  .slick-dots li {
     width: 20px;
     height: 3px;
     margin: 0 10px 0 0; }
@@ -1721,11 +1738,109 @@ footer {
     height: 330px;
     margin: 0 auto; }
   .fleet-item__text {
-    padding: 0 20px 30px; } }
+    padding: 0 20px 30px; }
+  .scroll-block {
+    overflow-x: visible; }
+  .certificate-box {
+    min-width: auto;
+    width: 220px;
+    height: 291px; }
+  .certificate-box__img {
+    max-width: 168px; }
+  .certificates {
+    padding: 80px 0 36px; }
+  .certificates-wrapper.slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .certificates-nav {
+    margin: 40px auto 0; }
+    .certificates-nav .slick-dots li {
+      background: rgba(10, 29, 55, 0.3); }
+    .certificates-nav .slick-dots .slick-active {
+      background: #003ec0; }
+  .btn-download {
+    padding: 7px 15px; }
+  .number-max {
+    display: none; }
+  .advantages {
+    padding: 0 0 85px; }
+    .advantages .slick-arrow {
+      top: 210px; }
+    .advantages .slick-prev {
+      left: 0; }
+    .advantages .slick-next {
+      left: 70px; }
+  .advantages-text {
+    width: 100%;
+    max-width: none; }
+  .advantages-item__content {
+    padding: 0;
+    width: 100%; }
+  .advantages-item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .advantages-item__icon {
+    margin: 0 auto 33px; }
+  .advantages-item__top {
+    width: 100%;
+    margin: 0 0 68px; }
+    .advantages-item__top .number {
+      margin: 0 30px 0 0; }
+  .about-images {
+    margin: 0 auto 80px; }
+    .about-images:before {
+      width: calc(100% + 30px);
+      left: -15px;
+      height: 100px; }
+    .about-images .image {
+      height: 200px;
+      max-width: 291px; }
+  .about-images-text {
+    width: 130px;
+    height: 160px;
+    padding: 20px;
+    bottom: -20px; }
+    .about-images-text strong {
+      line-height: 1; }
+  .timetable {
+    padding: 78px 0 48px; }
+  .timetable-line {
+    padding: 20px 10px 20px 0; }
+  .timetable-line__box {
+    width: calc(100% - 130px);
+    margin: 0 0 15px auto; }
+  .timetable-line__title {
+    margin: 0;
+    width: 100%;
+    padding: 0 0 0 20px; }
+  .timetable-line__date {
+    width: 95px;
+    height: 100px; }
+  .timer:before, .timer:after {
+    display: none; }
+  .main-box {
+    width: 100%;
+    height: 194px; }
+  .home-content {
+    margin: 0 0 105px 20px;
+    max-width: 240px; }
+  h1 {
+    font-size: 31.5px; }
+  .home {
+    padding: 284px 0 0;
+    background: url("../img/bg1-mob.png") no-repeat center top;
+      background-size: 100%; }
+  .logo {
+    max-width: 123px;
+    margin: 0 auto 0 0; }
+  .header-wrapper {
+    display: none; } }
 
 @media only screen and (max-width: 480px) {
   /**/ }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 360px) {
+  .advantages .slick-arrow {
+    top: 220px; } }

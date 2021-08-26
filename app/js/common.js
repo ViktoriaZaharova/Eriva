@@ -29,8 +29,37 @@ $('.fleet-slider').slick({
     prevArrow: '<button type="button" class="slick-prev"></button>',
     nextArrow: '<button type="button" class="slick-next"></button>',
     appendDots: '.fleet-slider__nav',
-    appendArrows: '.fleet-slider__nav'
+    appendArrows: '.fleet-slider__nav',
+    variableWidth: true,
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+                variableWidth: false,
+                slidesToShow: 1
+            }
+        }
+    ]
 });
+
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 576) {
+        $('.place-wrapper:not(.slick-initialized)').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 2,
+            arrows: false,
+            variableWidth: true,
+            appendDots: '.place-wrapper-dots'
+        });
+    } else {
+        $(".place-wrapper.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
 
 // select
 $('.js-example-basic-single').select2();

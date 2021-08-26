@@ -23,7 +23,7 @@
         rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"/>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/jQuery.countdownTimer.css">
   <link rel="stylesheet" href="css/main.css">
@@ -34,6 +34,11 @@
 
 <header>
   <div class="container">
+    <div class="btn-burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
     <div class="header-wrapper">
       <div class="header-top">
@@ -60,9 +65,11 @@
 
 <main class="home">
   <div class="container">
-    <h1><span class="color-blue">ERIVA</span>
-      flight school
-      in Riga, Latvia</h1>
+    <div class="home-content">
+      <h1><span class="color-blue">ERIVA</span>
+        flight school
+        in Riga, Latvia</h1>
+    </div>
 
     <div class="main-wrapper w-100">
       <div class="main-box">
@@ -334,28 +341,30 @@ experience</span>
   <div class="container">
     <h2>Our approved <br>certificates</h2>
 
-    <div class="certificates-wrapper">
-      <div class="certificate-box">
-        <a href="img/certificate1.png" data-fancybox="image" class="certificate-box__img"><img
-            src="img/certificate1.png" alt=""></a>
-        <a href="#" download="img/certificate1.png" class="btn-download">
-          <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.ATO.03</span>
-        </a>
-      </div>
-      <div class="certificate-box">
-        <a href="img/certificate2.png" data-fancybox="image" class="certificate-box__img"><img
-            src="img/certificate2.png" alt=""></a>
-        <a href="#" download="img/certificate2.png" class="btn-download">
-          <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.LTB.01</span>
-        </a>
-      </div>
+    <div class="scroll-block w-100">
+      <div class="certificates-wrapper">
+        <div class="certificate-box">
+          <a href="img/certificate1.png" data-fancybox="image" class="certificate-box__img"><img
+              src="img/certificate1.png" alt=""></a>
+          <a href="#" download="img/certificate1.png" class="btn-download">
+            <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.ATO.03</span>
+          </a>
+        </div>
+        <div class="certificate-box">
+          <a href="img/certificate2.png" data-fancybox="image" class="certificate-box__img"><img
+              src="img/certificate2.png" alt=""></a>
+          <a href="#" download="img/certificate2.png" class="btn-download">
+            <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.LTB.01</span>
+          </a>
+        </div>
 
-      <div class="certificate-box">
-        <a href="img/certificate3.png" data-fancybox="image" class="certificate-box__img"><img
-            src="img/certificate3.png" alt=""></a>
-        <a href="#" download="img/certificate3.png" class="btn-download">
-          <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.ATO.03</span>
-        </a>
+        <div class="certificate-box">
+          <a href="img/certificate3.png" data-fancybox="image" class="certificate-box__img"><img
+              src="img/certificate3.png" alt=""></a>
+          <a href="#" download="img/certificate3.png" class="btn-download">
+            <span class="btn-download__icon"><img src="img/download.png" alt=""></span><span class="btn-download__text"> LVA.ATO.03</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -398,19 +407,6 @@ TECNAM P2006T</span>
           <img src="img/news1.png" alt="" class="fleet-item__img">
           <span class="fleet-item__text">Обучение по программе PPL(А) <br> происходит на самолете <br>
 TECNAM P2008 JC</span>
-        </a>
-      </div>
-      <div class="slide">
-        <a href="#" class="fleet-item">
-          <img src="img/news2.png" alt="" class="fleet-item__img">
-          <span class="fleet-item__text">Обучение по программе IR(A) происходит на симуляторe FNPT II (Generic) на базе самолета TECNAM P2006T</span>
-        </a>
-      </div>
-      <div class="slide">
-        <a href="#" class="fleet-item">
-          <img src="img/news3.png" alt="" class="fleet-item__img">
-          <span class="fleet-item__text">Обучение по программе PPL(А) <br>происходит на самолете <br>
-TECNAM P2006T</span>
         </a>
       </div>
     </div>
@@ -456,6 +452,8 @@ TECNAM P2006T</span>
         <img src="img/place8.png" alt="">
       </div>
     </div>
+
+    <div class="place-wrapper-dots"></div>
   </div>
 </section>
 
@@ -487,7 +485,11 @@ TECNAM P2006T</span>
     </div>
 
     <div class="callback-wrapper w-100">
-      <div class="map-wrapper"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.6682686883973!2d23.944982716015403!3d56.92021438088167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eeda5084aa36e9%3A0xcf306b019d312010!2zU2t1bHRlcyBpZWxhIDUwLCBTa3VsdGUsIE3EgXJ1cGVzIG5vdmFkcywgTFYtMjEwOCwg0JvQsNGC0LLQuNGP!5e0!3m2!1sru!2snl!4v1629984452011!5m2!1sru!2snl" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+      <div class="map-wrapper">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2177.6682686883973!2d23.944982716015403!3d56.92021438088167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eeda5084aa36e9%3A0xcf306b019d312010!2zU2t1bHRlcyBpZWxhIDUwLCBTa3VsdGUsIE3EgXJ1cGVzIG5vdmFkcywgTFYtMjEwOCwg0JvQsNGC0LLQuNGP!5e0!3m2!1sru!2snl!4v1629984452011!5m2!1sru!2snl"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <div class="callback-box">
         <form method="post" class="form">
           <label>

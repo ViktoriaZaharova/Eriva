@@ -1,0 +1,75 @@
+@import "fonts"
+@import "vars"
+
+//header
+header
+  position: absolute
+  left: 0
+  top: 0
+  z-index: 3
+  width: 100%
+  .container
+    align-items: flex-end
+
+.btn-apply
+  width: 170px
+  height: 91px
+  padding: 10px 34px
+  flex-direction: column
+  font-weight: bold
+  align-items: flex-start
+  letter-spacing: 1.5px
+  .btn-icon
+    margin: 0 0 13px
+
+.logo
+  display: flex
+  align-items: center
+  max-width: 170px
+  width: 100%
+
+.header-wrapper
+  margin: 0 auto
+  max-width: 770px
+  width: 100%
+
+.header-top
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  flex-wrap: wrap
+  padding: 15px 0
+
+.menu
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  font-size: 15px
+  width: 100%
+  border-top: 1px solid rgba(#fff, .1)
+  li
+    a
+      color: #fefefe
+      padding: 20px 0 0
+      position: relative
+      &:before
+        content: ''
+        position: absolute
+        left: 0
+        top: -2px
+        height: 2px
+        width: 100%
+        background: transparent
+      &:hover
+        color: $orange
+    .active
+      &:before
+        background: $orange
+
+.language
+  color: #fff
+  font-size: 13px
+  text-transform: uppercase
+  margin: 0 0 0 30px

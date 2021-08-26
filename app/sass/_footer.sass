@@ -1,0 +1,59 @@
+@import "fonts"
+@import "vars"
+
+footer
+  font-size: 15px
+  padding: 33px 0 25px
+  .container
+    align-items: center
+    justify-content: space-between
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 25px 0 0
+    &:last-child
+      margin: 0
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      border: solid 1px #e4e8e0
+        radius: 50%
+      width: 45px
+      height: 45px
+
+.list-messengers
+  position: fixed
+  left: 0
+  top: 50%
+  transform: translate(0,-50%)
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  z-index: 6
+  font-size: 15px
+  li
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    a
+      color: #fff
+      padding: 10px 5px
+      width: 40px
+      height: 40px
+      display: flex
+      align-items: center
+      justify-content: center
+      &:hover
+        width: auto
+        padding: 10px 17px 10px 12px
+        .messenger-text
+          display: block
+
+.messenger-text
+  margin: 0 0 0 15px
+  display: none
+  transition: .3s ease

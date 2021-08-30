@@ -43,7 +43,7 @@
   .header-wrapper
     max-width: none
     width: auto
-    margin: 0 40px 0 auto
+    margin: 0 20px 0 auto
 
   header
     .container
@@ -52,11 +52,10 @@
   .btn-apply
     margin: 0 -15px 0 0
     height: 69px
+    padding: 10px 20px
+    width: 145px
     .btn-icon
       display: none
-
-  .language
-    margin: 0 0 0 55px
 
   .btn-burger
     display: flex
@@ -106,8 +105,6 @@
     margin: 0
     justify-content: flex-start
 
-
-
   .certificate-box
     min-width: 270px
 
@@ -133,6 +130,21 @@
     max-width: 400px
     padding: 80px 70px 74px
 
+  .main-page
+    padding: 180px 0 50px
+
+  .header-top a.box-decor, .language
+    margin: 0 0 0 15px
+
+  .header-top a.box-decor
+    font-size: 12px
+
+  .col-3
+    width: 50%
+
+  .news-card
+    margin: 0 0 40px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
   .main-wrapper
@@ -141,13 +153,15 @@
 
   .home-content
     margin: 0 0 157px 70px
+    max-width: 308px
 
   h1
     font-size: 39.5px
 
   .home
-    background: url("../img/bg1-tablet.jpg") no-repeat center
-      size: cover
+    -webkit-background-size: 1400px
+    background-size: 1400px
+    background-position: -430px top
     position: relative
 
   .list-messengers
@@ -257,17 +271,19 @@
   footer
     padding: 30px 0 25px
 
-
+  .header-top a.box-decor
+    font-size: 10px
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width: 700px)
+@media only screen and (max-width: 730px)
   .language
     margin: 0 0 0 20px
 
   .header-wrapper
-    margin: 0 20px 0 auto
+    display: none
 
   .btn-apply
+    margin: 0 -15px 0 auto
     width: 70px
     height: 69px
     padding: 0
@@ -278,6 +294,13 @@
       margin: 0
     .btn-text
       display: none
+
+  .news
+    padding: 70px 0 60px
+
+  .news-card__body
+    font-size: 13px
+    padding: 25px 30px
 
 @media only screen and (max-width: 576px)
   footer
@@ -488,8 +511,9 @@
 
   .home
     padding: 284px 0 0
-    background: url("../img/bg1-mob.png") no-repeat center top
-      size: 100%
+    -webkit-background-size: 1200px
+    background-size: 1200px
+
 
   .logo
     max-width: 123px
@@ -498,10 +522,12 @@
   .header-wrapper
     display: none
 
-
+  .col-3
+    width: 100%
 
 @media only screen and (max-width: 480px)
-  /**/
+  .home
+    background-position: -590px top
 
 
 /* Custom, iPhone Retina */
@@ -510,3 +536,5 @@
     .slick-arrow
       top: 220px
 
+  .home
+    background-position: -630px top

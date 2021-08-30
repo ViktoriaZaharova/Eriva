@@ -88,7 +88,7 @@ $('.menu li a').each(function () {
     let location = window.location.href;
     let link = this.href;
     if (location === link) {
-        $(this).addClass('current');
+        $(this).addClass('active');
     }
 });
 // end

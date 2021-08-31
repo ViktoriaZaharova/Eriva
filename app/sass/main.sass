@@ -104,6 +104,7 @@ input, textarea, select
   color: #fefefe
   border: none
     bottom: 1px solid rgba(#fff, .3)
+    radius: 0
   background: transparent
   width: 100%
 
@@ -1071,6 +1072,26 @@ strong
   z-index: 1
   color: #fff
   padding: 236px 0 120px
+  &:before
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    opacity: .3
+    z-index: -1
+    left: 0
+    top: 0
+  &:after
+    content: ''
+    position: absolute
+    z-index: -1
+    width: 1628px
+    height: 737px
+    background: url("../img/decor-bg.png") no-repeat center
+      size: 100%
+    top: 0
+    left: -10%
+    opacity: .5
 
 .breadcrumb
   width: 100%
@@ -1106,17 +1127,7 @@ strong
     z-index: -1
     left: 0
     top: 0
-  &:after
-    content: ''
-    position: absolute
-    z-index: -1
-    width: 1628px
-    height: 737px
-    background: url("../img/decor-bg.png") no-repeat center
-      size: 100%
-    top: 0
-    left: -10%
-    opacity: .5
+
 
 .news-card
   width: 100%
@@ -1236,6 +1247,47 @@ strong
       &:hover
         background: url("../img/arrow-right-orange.png") no-repeat center
           size: 100%
+
+//main-contacts
+.main-contacts
+  padding: 235px 0 70px
+  &:before
+    background: url("../img/contacts-bg.jpg") no-repeat center
+      size: cover
+  &:after
+    top: auto
+    bottom: 0
+    background: url('../img/decor-bg2.png') no-repeat center
+      size: cover
+    left: 118px
+    width: 2333px
+    height: 913px
+  .contacts-wrapper
+    margin: 130px 0 0
+    color: #fff
+    a, .contacts-box
+      color: #fff
+    .phone-icon, .contacts-box__icon
+      filter: brightness(0) invert(1)
+
+.callback-page
+  padding: 0
+  position: relative
+  .map-wrapper
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    z-index: 1
+  .callback-box
+    margin: 0 0 0 auto
+    position: relative
+    z-index: 2
+
+
+
+
 
 @import "header"
 @import "footer"

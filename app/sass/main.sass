@@ -1672,6 +1672,131 @@ strong
   align-items: stretch
   border-bottom: 1px solid #eee
 
+//main-gallery
+.main-gallery
+  padding: 235px 0 120px
+  background: url("../img/gallery-bg.jpg") no-repeat center
+    size: cover
+
+//gallery-section
+.gallery-section
+  position: relative
+  padding: 100px 0 0
+  &:before
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    width: 50%
+    background: #eef3fb
+  h2
+    margin: 0 0 40px
+    padding: 0
+    &:before, &:after
+      display: none
+  &:nth-child(odd)
+    padding: 100px 0 70px
+    &:before
+      right: auto
+      left: 0
+    .about-images-text
+      left: auto
+      right: -20px
+    .gallery-box-title
+      padding: 0 0 0 40px
+
+.gallery-box
+  position: relative
+  width: 100%
+  height: 301px
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  .about-images-text
+    left: -20px
+    top: 50%
+    transform: translate(0,-50%)
+    padding: 27px 15px 19px
+    width: 100px
+    height: 100px
+    font-size: 15px
+    font-weight: bold
+    text-transform: none
+    z-index: 1
+    strong
+      font-size: 40px
+      margin: 0 auto 5px
+      line-height: 1
+    p
+      text-transform: none
+      font-size: 15px
+      letter-spacing: 0
+
+.gallery-box-title
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  justify-content: center
+
+.gallery-box__fancybox
+  width: 100%
+  height: 100%
+  overflow: hidden
+  position: relative
+  background: #0a1d37
+  cursor: pointer
+  &:before
+    content: '+'
+    color: #fff
+    font-size: 50px
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    opacity: 0
+    visibility: hidden
+    transition: .3s ease
+  &:hover
+    img
+      opacity: .3
+    &:before
+      opacity: 1
+      visibility: visible
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition: .3s ease
+
+.mb-30
+  margin-bottom: 30px
+
+.btn-load-more
+  margin: 13px 0 40px
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  color: #666
+  font-size: 15px
+  max-width: 50%
+  padding: 0 20px 0 0
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 15px 0 0
+  &:hover
+    color: $accent
 
 @import "header"
 @import "footer"

@@ -25,6 +25,8 @@
       height: 100%
       left: 0
 
+  .callback-image__bg
+    min-width: auto
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
@@ -36,6 +38,19 @@
 
   .fleet
     padding: 90px 0 80px
+
+  .certificates-two h2
+    margin: 0 auto 30px
+    max-width: none
+
+  .certificates-two .scroll-block
+    max-width: none
+
+  .team-box__photo
+    height: 270px
+
+  .team-wrapper
+    padding: 0 0 0 100px
 
 @media only screen and (max-width: 992px)
   .menu
@@ -156,6 +171,43 @@
 
   .callback-page
     padding: 0
+
+  .callback-image
+    width: calc(100% - 400px)
+
+  .about-school
+    .about-content
+      margin: 0 0 40px
+    .about-images
+      margin: 0
+
+  .about-wrapper
+    flex-direction: column
+    align-items: flex-start
+    margin: 30px 0 0
+
+  .about-wrapper__img
+    width: 100%
+    order: 1
+    margin: 0 0 0 -15px
+    img
+      min-width: auto
+
+  .about-wrapper__text
+    width: 100%
+    max-width: none
+
+  .main-wrapper-two .main-box
+    height: 300px
+
+  .block_hover-img
+    width: 300px
+    height: 250px
+
+  .block_hover-text
+    padding: 30px
+    font-size: 16px
+    width: calc(100% - 300px)
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -294,6 +346,59 @@
       margin: 0 -15px
       width: calc(100% + 30px)
 
+  .main-program .box-text
+    margin: 40px 0 0
+    font-size: 16px
+
+  .programs-box
+    margin: 0 0 40px
+    h3
+      font-size: 24px
+    &__head
+      max-width: none
+      width: 100%
+      margin: 0 0 30px
+      h5
+        font-size: 16px
+        letter-spacing: 0
+    &__body
+      width: 100%
+      padding: 0
+      max-width: none
+
+  .programs-page
+    padding: 50px 0 0
+
+  .callback-image
+    width: calc(100% + 30px)
+    margin: 0 -15px
+    padding: 30px 0 260px
+    h2
+      max-width: none
+
+  .block_hover-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .block_hover-text
+    width: 100%
+
+  .block_hover-img
+    margin: 0 auto
+
+  .price-service
+    width: 100%
+    margin: 10px 0 0
+
+  .aviation-about
+    padding: 60px 0 0
+
+  .programs-box__head .box-text
+    max-width: none
+    margin: 20px 0 0
+    p
+      margin: 0 0 20px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 730px)
   .language
@@ -321,6 +426,23 @@
   .news-card__body
     font-size: 13px
     padding: 25px 30px
+
+  .team
+    padding: 60px 0 30px
+
+  .team-box
+    margin: 0 0 30px
+
+  .team-wrapper
+    padding: 0
+    width: 100%
+    margin: 20px 0 0
+
+  .team h2
+    max-width: none
+
+  .callback-two
+    padding: 50px 0 0
 
 @media only screen and (max-width: 576px)
   footer
@@ -550,9 +672,43 @@
     .contacts-box
       margin: 0 0 30px
 
+  .about-wrapper__text
+    padding: 0
+    &::before, &:after
+      display: none
+
+  .about-school .about-images .image
+    height: 400px
+
+  .panel_heading .block_title
+    padding: 20px 80px
+
+  .price-service
+    flex-wrap: wrap
+    &:before
+      display: none
+
+  .th, .td
+    padding: 20px 10px
+
+  .rating-icao-table
+    min-width: 700px
+
+  .aviation-about
+    .scroll-block
+      overflow-x: auto
+
+  .rating-icao h3
+    margin: 0 0 30px
+
 @media only screen and (max-width: 480px)
   .home
     background-position: -590px top
+
+  .callback-image
+    padding: 60px 15px 140px
+    h2
+      margin: 0 auto
 
 
 /* Custom, iPhone Retina */

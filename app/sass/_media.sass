@@ -28,6 +28,19 @@
   .callback-image__bg
     min-width: auto
 
+  .marker-text
+    margin: 30px auto 0
+
+  .training-timeline
+    padding: 100px 0 90px
+
+  .total-duration
+    margin: 30px auto 0
+
+  .training-timeline-box
+    max-width: 185px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 1100px)
   .certificates-wrapper
@@ -51,6 +64,39 @@
 
   .team-wrapper
     padding: 0 0 0 100px
+
+  .training-timeline-box
+    max-width: 49%
+    margin: 0 0 30px
+    &:nth-last-child(2)
+      margin: 30px 0 0
+
+  .training-category
+    transform: none
+    margin: 0 auto 20px
+    width: 100%
+    text-align: center
+    order: -1
+
+  .training-timeline-finish
+    width: 100%
+    height: auto
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    margin: 30px auto 0
+
+  .training-timeline-finish__icon
+    margin: 0 20px 0 0
+
+
+  .training-timeline-finish__text
+    position: relative
+    top: 0
+    right: 0
+    transform: none
+    width: auto
+    left: 0
 
 @media only screen and (max-width: 992px)
   .menu
@@ -723,6 +769,32 @@
 
   .gallery-col-text
     order: -1
+
+  .col-2
+    width: 100%
+
+  .course-steps
+    padding: 80px 0
+
+  .course-steps-box
+    margin: 0 0 40px
+    h3
+      margin: 0 0 10px
+    .links
+      margin: 15px 0 0
+
+  .course-steps-box__number
+    margin: 0 0 10px
+    font-size: 30px
+
+  .training-timeline-box
+    max-width: none
+
+  .training-timeline h2
+    margin: 0 0 40px
+
+  .training-timeline-box:nth-child(3), .training-timeline-box:nth-child(4)
+    margin: 0 0 30px
 
 @media only screen and (max-width: 480px)
   .home

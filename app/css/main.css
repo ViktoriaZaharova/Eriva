@@ -2363,6 +2363,9 @@ strong {
   max-width: 320px;
   margin: -40px 80px 0 auto; }
 
+.compensate-for-scrollbar {
+  margin-right: 0 !important; }
+
 @font-face {
   font-family: "CenturyGothic";
   font-weight: 400;

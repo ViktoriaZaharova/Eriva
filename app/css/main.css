@@ -753,7 +753,34 @@ strong {
 
 .certificates-nav {
   width: 100%;
-  margin: 30px 0 0; }
+  margin: 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+  .certificates-nav .slick-arrow {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+            transform: none;
+    margin: 0 20px 0 0; }
+  .certificates-nav .slick-next {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0 0 0 20px; }
+  .certificates-nav .slick-dots li {
+    background: rgba(10, 29, 55, 0.3); }
+  .certificates-nav .slick-dots .slick-active {
+    background: #003ec0; }
 
 .certificate-box {
   -webkit-box-shadow: 0px 10px 40px 0 rgba(128, 144, 156, 0.3);
@@ -1651,9 +1678,6 @@ strong {
 .certificates-two:before {
   display: none; }
 
-.certificates-two .scroll-block {
-  max-width: 870px; }
-
 .certificates-two .container {
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -1662,6 +1686,10 @@ strong {
 .certificates-two h2 {
   margin: 0 auto 0 0;
   max-width: 215px; }
+
+.certificates-two .certificates-wrapper {
+  padding: 0;
+  max-width: 870px; }
 
 .team {
   padding: 130px 0 0; }
@@ -2812,7 +2840,10 @@ footer {
     -webkit-transform: none;
             transform: none;
     width: auto;
-    left: 0; } }
+    left: 0; }
+  .certificates-two .certificates-wrapper {
+    margin: 0 auto;
+    max-width: none; } }
 
 @media only screen and (max-width: 992px) {
   .menu {
@@ -3269,10 +3300,6 @@ footer {
     display: flex; }
   .certificates-nav {
     margin: 40px auto 0; }
-    .certificates-nav .slick-dots li {
-      background: rgba(10, 29, 55, 0.3); }
-    .certificates-nav .slick-dots .slick-active {
-      background: #003ec0; }
   .btn-download {
     padding: 7px 15px; }
   .number-max {

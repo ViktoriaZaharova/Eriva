@@ -684,6 +684,25 @@ strong
 .certificates-nav
   width: 100%
   margin: 30px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  .slick-arrow
+    position: relative
+    top: 0
+    left: 0
+    right: 0
+    transform: none
+    margin: 0 20px 0 0
+  .slick-next
+    order: 1
+    margin: 0 0 0 20px
+  .slick-dots
+    li
+      background: rgba(#0a1d37, .3)
+    .slick-active
+      background: #003ec0
 
 .certificate-box
   box-shadow: 0px 10px 40px 0 rgba(128, 144, 156, 0.3)
@@ -1467,13 +1486,15 @@ strong
 .certificates-two
   &:before
     display: none
-  .scroll-block
-    max-width: 870px
+
   .container
     align-items: flex-start
   h2
     margin: 0 auto 0 0
     max-width: 215px
+  .certificates-wrapper
+    padding: 0
+    max-width: 870px
 
 //team
 .team

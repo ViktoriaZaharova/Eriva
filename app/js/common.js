@@ -44,20 +44,17 @@ $('.fleet-slider').slick({
 });
 
 $('.certificates-wrapper').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     slidesToShow: 3,
-    arrows: false,
+    arrows: true,
     variableWidth: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"></button>',
     appendDots: '.certificates-nav',
-    responsive: [
-        {
-            breakpoint: 1100,
-            settings: {
-                dots: true,
-            }
-        }
-    ]
+    appendArrows: '.certificates-nav',
+
+
 });
 
 // slick active
